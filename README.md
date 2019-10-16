@@ -6,14 +6,14 @@
 In this lab you will create a full-stack CRUD app in which the user can create, read, and update, and destroy itty-bitty kittens.
 
 ### Set up
-- clone down this repo
-- run `npm init -y` 
+- Clone down this repo
+- Run `npm init -y` 
 - Set up your database using sequelize-cli
   - You should have one model called Kitten and it should have a name, age, and breed
   - Add a few kittens to your db for testing purposes
-- set up your express server
-- set up express router
-- run `create-react-app client` to create your front-end React app
+- Set up your express server
+- Set up express router
+- Run `create-react-app client` to create your front-end React app
 - `cd` into client and then `npm start` -- this will start your front end server on another port
 
 
