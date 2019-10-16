@@ -1,0 +1,24 @@
+{
+  "name": "kittens-full-crud",
+  "version": "1.0.0",
+  "description": "![](https://media.giphy.com/media/102mqDgAb4Kfug/giphy.gif)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/michaelion/kittens-full-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
+    "sequelize": "^5.19.7",
+    "sequelize-cli": "^5.5.1"
+  }
+}
