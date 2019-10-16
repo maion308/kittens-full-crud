@@ -1,38 +1,49 @@
-![](/ga_cog.png)
+## Kittens Full CRUD!
 
-# Book Catalogue
+![](https://media.giphy.com/media/X6HWNLjWi9rw7PLVSO/giphy.gif)
 
-![](https://cdn-images-1.medium.com/max/1024/1*YLlZ96J3p8GFkIh1USVMzg.jpeg)
+### Introduction
+In this lab you will create a full-stack CRUD app in which the user can create, read, and update, and destroy itty-bitty kittens.
 
-## Activity
-
-Your friend had an idea for a startup and has asked you to make a simple prototype for the backend of this app. So far, all your friend has told you is the basic gist: it will be an app where users can catalogue what books they've read. They've also told you what info they want users to be able to add for books. Given that, let's try making an API!
-
-### What We Know
-
-##### Books Model
-
-  - title
-  - author
-  - genre
-  - publisher
-  - date published
-
-> :books: It's up to you what data type each one is!
-
-##### User Stories  
-
-1. As a user, I can add books that I've read onto my account
-1. As a user, I can see all books I have added
-1. As a user, I can see an individual book's info and edit it
-1. As a user, I can delete a book from my list
-
-> :books: Remember you're making an API, so we have no front-end to test our routes -- use Postman to test as you go!
+### Set up
+- clone down this repo
+- run `npm init -y` 
+- Set up your database using sequelize-cli
+- set up your express server
+- set up express router
+- run `create-react-app client` to create your front-end React app
+- `cd` into client and then `npm start` -- this will start your front end server on another port
 
 
-# Seeding Data
+## CRUD 
 
-Remember Faker? You can use that to seed your database without having to fill out fake information yourself! Or you can maunally add at least 5 books.
+### Create
+- add a `CREATE` route handler.
+- Test `CREATE` in Postman
+- also verify that the `INDEX` route returns a non-empty array after creating a few kittens
 
-![](https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif)
+### Show
+- add a `SHOW` route handler. `SHOW` is a type of route that only shows one item, rather than all (`INDEX`)
+- The `SHOW` route should be for ID (`id/:id`);
+- verify that `SHOW` works with Postman
 
+### Delete
+- add a `DELETE` route handler
+- note how adding the same RESTful action is remarkably similar for each resource. Appreciate this symmetry.
+
+### Update
+- now add an `UPDATE` route handler.
+- You know the drill! Check it in Postman!
+
+
+### THE FRONT END
+Now that we have all our express routes set up and working, we can connect them to our front end so that users can easily interact with our app.
+
+- think about how you want to structure this app. What are your components? Where are you creating your functions? What is held in state? You've done LOTS of updating in React, so reference old homeworks and projects if you need a refresher! The main elements you need are:
+  - a form rendered on the page with name, age, and breed
+  - functions that handle the form change and form submit. the form submit can either use axios call functions from an `api-helper.js` file or directly in the components
+  - in state: a formData object; a kittens array
+  - 'edit' and 'delete' buttons on each rendered item
+
+### BONUS
+- Now do the same thing but for Doggos! Everything should be quite similar, but think about how you want to implement this extra resource in your React app.
