@@ -1,6 +1,6 @@
 ## Kittens Full CRUD!
 
-![](https://media.giphy.com/media/X6HWNLjWi9rw7PLVSO/giphy.gif)
+![](https://media.giphy.com/media/102mqDgAb4Kfug/giphy.gif)
 
 ### Introduction
 In this lab you will create a full-stack CRUD app in which the user can create, read, and update, and destroy itty-bitty kittens.
@@ -48,4 +48,9 @@ Now that we have all our express routes set up and working, we can connect them 
   - 'edit' and 'delete' buttons on each rendered item
 
 ### BONUS
+
+![](https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif)
+
 - Now do the same thing but for Doggos! Everything should be quite similar, but think about how you want to implement this extra resource in your React app.
+
+
