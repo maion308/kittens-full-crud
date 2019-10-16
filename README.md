@@ -1,11 +1,5 @@
 ![](/ga_cog.png)
 
----
-Title: Book Catalogue<br>
-Type: Lab<br>
-
----
-
 # Book Catalogue
 
 ![](https://cdn-images-1.medium.com/max/1024/1*YLlZ96J3p8GFkIh1USVMzg.jpeg)
@@ -38,5 +32,7 @@ Your friend had an idea for a startup and has asked you to make a simple prototy
 
 # Seeding Data
 
-Remember [faker](https://github.com/stympy/faker)? You can use that to seed your database without having to fill out fake information yourself! Or you can maunally add at least 5 books.
+Remember Faker? You can use that to seed your database without having to fill out fake information yourself! Or you can maunally add at least 5 books.
+
+![](https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif)
 
